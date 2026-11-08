@@ -8,7 +8,7 @@ inicio
     S <- 0
     resp <- "S"
 
-    Enquanto (resp = "S") faca
+ repita
         Escreva("Digite valor ==> ")
         Leia(valor)
 
@@ -16,7 +16,7 @@ inicio
 
         Escreval("Voce quer continuar? [S/N]")
         Leia(resp)
-    Fimenquanto
+ ate (resp = "N")
 
     Escreval("A soma de todos os valores digitados e ", S)
 
