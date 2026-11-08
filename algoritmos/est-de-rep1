@@ -1,23 +1,24 @@
-algoritmo "Somador"
+algoritmo "ContadorNegat"
 
 var
-    valor, S: Inteiro
-    resp: Caractere
+    N, C, TotN: Inteiro
 
 inicio
-    S <- 0
-    resp <- "S"
+    C <- 1
+    TotN <- 0
 
- repita
-        Escreva("Digite valor ==> ")
-        Leia(valor)
+    Repita
+        Escreva("Digite um numero: ")
+        Leia(N)
 
-        S <- S + valor
+        Se (N < 0) entao
+            TotN <- TotN + 1
+        FimSe
 
-        Escreval("Voce quer continuar? [S/N]")
-        Leia(resp)
- ate (resp = "N")
+        C <- C + 1
 
-    Escreval("A soma de todos os valores digitados e ", S)
+    Ate (C > 5)
+
+    Escreval("Foram digitados ", TotN, " valores negativos.")
 
 fimalgoritmo
