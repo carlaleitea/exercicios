@@ -1,14 +1,23 @@
 algoritmo "Somador"
+
 var
-    N, Cont, S: Inteiro
+    valor, S: Inteiro
+    resp: Caractere
+
 inicio
     S <- 0
     resp <- "S"
-    Enquanto (resp <= "S") faca
-        Escreva ("Digite valor ==> ")
-        Leia (N)
-        S <- S + N
-        Escreval("Você quer continuar? [S/N])
+
+    Enquanto (resp = "S") faca
+        Escreva("Digite valor ==> ")
+        Leia(valor)
+
+        S <- S + valor
+
+        Escreval("Voce quer continuar? [S/N]")
+        Leia(resp)
     Fimenquanto
+
     Escreval("A soma de todos os valores digitados e ", S)
+
 fimalgoritmo
