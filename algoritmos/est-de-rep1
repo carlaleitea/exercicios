@@ -1,0 +1,14 @@
+algoritmo "Somador"
+var
+    N, Cont, S: Inteiro
+inicio
+    S <- 0
+    resp <- "S"
+    Enquanto (resp <= "S") faca
+        Escreva ("Digite valor ==> ")
+        Leia (N)
+        S <- S + N
+        Escreval("Você quer continuar? [S/N])
+    Fimenquanto
+    Escreval("A soma de todos os valores digitados e ", S)
+fimalgoritmo
