@@ -1,38 +1,15 @@
-algoritmo "Detector de Pesado"
+algoritmo "FazSomaProcedimento"
 
 var
-  I: inteiro
-  N, Pesado: caractere
-  P, Mai: real
-
-Procedimento Topo()
+  X, Y: inteiro
+procedimento Soma(A, B: inteiro)
+  inicio
+    escreval("Recebi o valor ", A)
+    escreval("Recebi o valor ", B)
+fimprocedimento
 inicio
-  Limpatela
-  Escreval("----------------------------------")
-  Escreval("        DETECTOR DE PESADO        ")
-  Escreval("----------------------------------")
-FimProcedimento
-
-inicio
-  Mai <- 0
-  Topo()
-
-  Para I de 1 ate 5 faca
-    Escreva("Digite seu nome: ")
-    Leia(N)
-
-    Escreva("Digite o peso de ", N, ": ")
-    Leia(P)
-
-    Se (P > Mai) entao
-      Mai <- P
-      Pesado <- N
-    FimSe
-
-    Topo()
-  FimPara
-
-  Topo()
-  Escreval("A pessoa mais pesada foi ", Pesado, ", com ", Mai, " quilos.")
+  x <- 5
+  y <-3
+  Soma(X, Y)
 
 fimalgoritmo
