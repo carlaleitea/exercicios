@@ -1,20 +1,18 @@
-algoritmo "ParouImparProcedimento"
-
+algoritmo "Passagem por Referencia"
 var
-  N: inteiro
-
-procedimento ParouImpar(V: inteiro)
+   X, Y: Inteiro
+Procedimento Soma (A, B: Inteiro)
 inicio
-  Se (V mod 2 = 0) entao
-    escreval("O NUMERO E PAR")
-  senao
-    escreval("O NUMERO E IMPAR")
-  fimse
-fimprocedimento
-
+   A <- A + 1
+   B <- B + 2
+   EscrevaL("Valor de A = ", A)
+   EscrevaL("Valor de B = ", B)
+   EscrevaL("Soma A + B = ", A+B)
+FimProcedimento
 inicio
-  escreval("DIGITE UM NUMERO: ")
-  leia(N)
-  ParouImpar(N)
-
+   X <- 4
+   Y <- 8
+   Soma (X, Y)
+   EscrevaL("Valor de X = ", X)
+   EscrevaL("Valor de Y = ", Y)
 fimalgoritmo
