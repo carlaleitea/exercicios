@@ -1,15 +1,20 @@
-algoritmo "FazSomaProcedimento"
+algoritmo "ParouImparProcedimento"
 
 var
-  X, Y: inteiro
-procedimento Soma(A, B: inteiro)
-  inicio
-    escreval("Recebi o valor ", A)
-    escreval("Recebi o valor ", B)
-fimprocedimento
+  N: inteiro
+
+procedimento ParouImpar(V: inteiro)
 inicio
-  x <- 5
-  y <-3
-  Soma(X, Y)
+  Se (V mod 2 = 0) entao
+    escreval("O NUMERO E PAR")
+  senao
+    escreval("O NUMERO E IMPAR")
+  fimse
+fimprocedimento
+
+inicio
+  escreval("DIGITE UM NUMERO: ")
+  leia(N)
+  ParouImpar(N)
 
 fimalgoritmo
