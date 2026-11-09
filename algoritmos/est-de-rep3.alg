@@ -1,11 +1,18 @@
-algoritmo "Primeiro Programa"
+algoritmo "Fibonacci"
 
 var
-  c: inteiro
+  a, b, c, i: inteiro
 
 inicio
-  para c de 1 ate 10 faca
-    escreval(c)
+  a <- 0
+  b <- 1
+
+  para i de 1 ate 15 faca
+    escreva(a, " ")
+
+    c <- a + b
+    a <- b
+    b <- c
   fimpara
 
 fimalgoritmo
