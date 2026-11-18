@@ -16,15 +16,15 @@ Estou em transição de carreira para tecnologia e cursando Engenharia de Softwa
 | est-de-rep1.alg | Estrutura de repetição: somador |
 | est-de-rep3.alg | Estrutura de repetição 3 |
 | procedimentos.alg | Procedimentos |
+| funcoes.alg | Funções |
 
 ## Em andamento
 
 - [x] Estruturas de repetição
-- [ ] Procedimentos e funções
+- [x] Procedimentos
+- [x] Funções
 - [ ] Vetores e matrizes
-- [ ] Meu primeiro projeto: jogo da forca
 
 ## Como acompanho meus estudos
 
-Cada alteração importante vira um commit, então o histórico mostra
-como meu código foi evoluindo.
+Cada alteração importante vira um commit, então o histórico mostra como meu código foi evoluindo.
