@@ -1,21 +1,21 @@
-Algoritmo "Soma de um valor"
+Algoritmo "ParOuImpar"
 
 var
-   V1, V2, S: Inteiro
+   N: Inteiro
+   R: Caractere
 
-Funcao Soma(X, Y: Inteiro): Inteiro
-Inicio
-   Retorne X + Y
+Funcao ParOuImpar(V: Inteiro): Caractere
+inicio
+   Se (V%2 = 0) entao
+      Retorne "PAR"
+   senao
+      Retorne "IMPAR"
+   FimSe
 FimFuncao
 
 inicio
-   Escreva("Digite o primeiro valor: ")
-   Leia(V1)
-
-   Escreva("Digite o segundo valor: ")
-   Leia(V2)
-
-   S <- Soma(V1, V2)
-
-   EscrevaL("A soma entre ", V1, " e ", V2, " é igual a ", S)
-Fimalgoritmo
+   Escreva("Digite um número: ")
+   Leia(N)
+   R <- ParOuImpar(N)
+   Escreva ("O número ", N, " é um valor ", R)
+fimalgoritmo
